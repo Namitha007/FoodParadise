@@ -1,0 +1,44 @@
+h1{
+  padding-top: 30px;
+  margin-left: 50px;
+  font-family: 'Dancing Script', cursive;
+  color: #5f015f;
+  font-size: 30px;
+  font-weight: 250;
+}
+
+#about {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    position: relative;
+}
+  
+.left-text-content .row{
+    margin-top: 80px;
+}
+
+img {
+    width: 100%;
+    overflow: hidden;
+}
+  
+.left-text-content p {
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #5f015f;
+}
+  
+.right-img-content {
+    margin-left: 0px;
+}
+  
+.right-img-content  {
+    position: relative;
+}
+
+.right-img-content img{
+    height: 350px;
+    width: 400px;
+}

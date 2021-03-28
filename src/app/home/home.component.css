@@ -1,0 +1,64 @@
+.col-lg-4, .col-lg-8 {
+  padding: 0px;
+}
+
+.left-content {
+    background-image: url('/assets/images/Left.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 800px;
+  }
+
+  .left-content .inner-content {
+    position: absolute;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+  }
+
+  .left-content h4 {
+  font-family: 'Dancing Script', cursive;
+  color: #5f015f;
+  font-size: 55px;
+  font-weight: 250;
+}
+
+.left-content h6 {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #5f015f;
+    letter-spacing: 3px;
+    margin-top: 5px;
+  }
+
+a{
+  background-color: #5f015f;
+  color: #e2ccf1;
+  padding: 15px 25px;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+
+.img-right{
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+.img-right img{
+  min-height: 100%;
+  min-width: 100%;
+  position: relative;
+  display: inline-block;
+  max-width: none;
+}
+
