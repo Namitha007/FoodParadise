@@ -8,6 +8,10 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -15,12 +19,16 @@ import { AboutComponent } from './about/about.component';
     HeaderComponent,
     HomeComponent,
     FooterComponent,
-    AboutComponent
-  ],
+    AboutComponent,
+    MenuComponent
+],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ReactiveFormsModule,
+    HttpClientModule, 
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

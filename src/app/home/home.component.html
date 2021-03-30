@@ -1,54 +1,79 @@
-<div id="top">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-4">
-                <div class="left-content">
-                    <div class="inner-content">
-                        <h4>FoodParadise</h4>
-                        <h6>YOUR HAPPY PLACE</h6>
-                        <div class="reservation">
-                            <a href="#" target="">Make a Reservation</a>                       
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-8">
-                <div class="image-content">
-                    <div class="Slider">
-                      
-                      <div class="item">
-                        <div class="img-right">
-                            <img src="assets/images/Right2.jpg" alt="">
-                        </div>
-                      </div>
-                
-                      <div class="item">
-                        <div class="img-right">
-                            <img src="assets/images/Carbonara.jpg" alt="">
-                        </div>
-                      </div>
-                      
-                      <div class="item">
-                        <div class="img-right">
-                            <img src="assets/images/burger.jpg" alt="">
-                        </div>
-                      </div>
+<div id="homeContent" class="carousel slide" data-ride="carousel">
+  <!-- Slide Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#homeContent" data-slide-to="0" class="active"></li>
+    <li data-target="#homeContent" data-slide-to="1"></li>
+    <li data-target="#homeContent" data-slide-to="2"></li>
+  </ul>
 
-                      <div class="item">
-                        <div class="img-right">
-                            <img src="assets/images/tteokbokki.jpg" alt="">
-                        </div>
-                      </div>
+  <!-- The slides to show -->
 
-                      <div class="item">
-                        <div class="img-right">
-                            <img src="assets/images/beverage.jpg" alt="">
-                        </div>
-                      </div>
-                      
-                    </div>
-                </div>
-            </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <ng-container>
+        <div class="text-block"
+          style="background-image: url('../../assets/images/table01.jpg'); background-size: cover;">
+          <div class="font-heading">
+            <h2 style="color: #f7dbbb;">Food Paradise</h2>
+          </div>
+          <p class="font-style-1">Cafe & Restaurant</p>
         </div>
+      </ng-container>
+    </div> 
+
+    <div class="carousel-item ">
+      <ng-container>
+        <div class="text-block"
+          style="background-image: url('../../assets/images/pasta02.jpg'); background-size: cover;">
+        </div>
+      </ng-container>
     </div>
+
+    <div class="carousel-item ">
+      <ng-container>
+        <div class="text-block"
+          style="background-image: url('../../assets/images/paratha.jpg'); background-size: cover;">
+        </div>
+      </ng-container>
+    </div>
+  </div>
+
+
+  <!-- Left and right -->
+  <a class="carousel-control-prev" href="#homeContent" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#homeContent" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+<!-- container -->
+<div id="top">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4 pl-0 pr-0">
+        <div class="left-content">
+          <div class="inner-content">
+            <h4>FoodParadise</h4>
+            <h6>YOUR HAPPY PLACE</h6>
+            <div class="reservation">
+              <a href="#" target="">Make a Reservation</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-8 pl-0 pr-0">
+        <div class="right-content">
+          <div class="col align-self-start">
+            <img src="../../assets/images/coffee.jpg" alt="coffee" height="300" width="435">
+          </div>
+          <div class="col align-self-end" style="text-align: right;">
+            <img src="../../assets/images/burger01.jpg" alt="burger" height="300" width="435">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

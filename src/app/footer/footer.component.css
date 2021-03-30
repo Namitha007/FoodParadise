@@ -1,33 +1,36 @@
-footer {
-  padding: 20px 0px;
-  background-color: #e2ccf1;
+.footer {
+  background-color: #593402;
 }
 
-footer .right-text-content p {
-  margin-top: 50px;
-  color: #800080;
+.footer .right-text-content p {
+  vertical-align: middle;
+  color: #f7dbbb;
   font-size: 20px;
   text-align: right;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  padding-top: 38px;
 }
 
-footer .left-text-content {
+.footer .left-text-content {
   text-align: left;
-  margin-top: 35px;
+  vertical-align: middle;
+  padding-top: 23px;
 }
 
-footer .logo {
+.footer .logo {
   text-align: center;
+  vertical-align: middle;
+  padding-top: 10px;
 }
 
-footer .left-text-content ul li {
+.footer .left-text-content ul li {
   display: inline-block;
   margin-left: 15px;
 }
 
 
-footer .left-text-content #youtube{
-  color: white;
+.footer .left-text-content #youtube{
+  color: #f7dbbb;
   width: 45px;
   height: 45px;
   display: inline-block;
@@ -38,8 +41,8 @@ footer .left-text-content #youtube{
   border-radius: 50%;
 }
 
-footer .left-text-content #twitter{
-  color: white;
+.footer .left-text-content #twitter{
+  color: #f7dbbb;
   width: 45px;
   height: 45px;
   display: inline-block;
@@ -50,8 +53,8 @@ footer .left-text-content #twitter{
   border-radius: 50%;
 }
 
-footer .left-text-content #instagram{
-  color: white;
+.footer .left-text-content #instagram{
+  color: #f7dbbb;
   width: 45px;
   height: 45px;
   display: inline-block;
