@@ -12,6 +12,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MenuComponent } from './menu/menu.component';
+import { BreakfastComponent } from './breakfast/breakfast.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { MenuComponent } from './menu/menu.component';
     HomeComponent,
     FooterComponent,
     AboutComponent,
-    MenuComponent
+    MenuComponent,
+    BreakfastComponent
 ],
   imports: [
     BrowserModule,

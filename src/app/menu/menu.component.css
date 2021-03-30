@@ -1,0 +1,11 @@
+.bg-overlay {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("../../assets/images/h4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #f7dbbb;
+    height: 490px;
+    padding-top: 50px;
+    
+}
+
