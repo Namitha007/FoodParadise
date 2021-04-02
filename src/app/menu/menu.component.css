@@ -1,11 +1,42 @@
-.bg-overlay {
-    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("../../assets/images/h4.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    color: #f7dbbb;
+.text-block {
+    /* margin: 0; */
+    width: 100%;
     height: 490px;
-    padding-top: 50px;
-    
+    font-family: "Roboto", sans-serif;
 }
 
+h6{
+    font-family: 'Proza Libre', sans-serif;
+    font-weight: 10;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 7px; 
+    color: #D3D3D3;
+    padding: 3% 0 0 0;
+}
+
+.font-style{
+    color: #D3D3D3;
+    text-align: center;
+    padding: 0 0 1% 0;
+    letter-spacing: 5px;
+    font-size: 55px;
+    font-family: Brush Script MT;
+}
+
+img{
+    width: 100%;
+    height: 150px;
+}
+
+.card{
+    margin: auto;
+}
+
+.card-body{
+    color: #3e1014;
+}
+
+h5{
+    font-size: 25px;
+}

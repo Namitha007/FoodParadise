@@ -1,9 +1,45 @@
+/* slider */
+.text-block {
+  margin: 0;
+  width: 100%;
+  height: 600px;
+  font-family: "Roboto", sans-serif;
+}
+
+h6{
+  font-family: 'Proza Libre', sans-serif;
+  font-weight: 10;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 7px; 
+  color: #D3D3D3;
+  padding: 15% 0 0 20.5%;
+}
+
+.font-heading h2{
+  font-family: 'Proza Libre', sans-serif;
+  font-weight: 10;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 7px; 
+  color: #D3D3D3;
+  padding: 0 0 0 20.5%;
+}
+
+.font-style{
+  color: #D3D3D3;
+  padding: 0 20% 0 20%;
+  letter-spacing: 0px;
+  font-size: 35px;
+  font-family: 'Proza Libre', sans-serif;
+}
+
+
+
+/* container */
+
 .left-content {
-  /* background-image: url('/assets/images/Left.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
-  background-color: #f7dbbb;
+  background-color: #D3D3D3;
   position: relative;
   width: 100%;
   height: 600px;
@@ -18,8 +54,8 @@
 }
 
 .left-content h4 {
-  font-family: 'Dancing Script', cursive;
-  color: #593402;
+  font-family: 'Proza Libre', sans-serif;
+  color: #3e1404;
   font-size: 55px;
   font-weight: 250;
 }
@@ -28,83 +64,39 @@
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 500;
-    color: #593402;
+    color: #3e1404;
     letter-spacing: 3px;
 }
 
 .reservation a{
-  background-color: #593402;
-  color: #f7dbbb;
+  background-color: #3e1404;
+  color: #D3D3D3;
   padding: 15px 25px;
   border-radius: 8px;
   text-align: center;
   display: inline-block;
 }
 
+
+h1{
+  color: #3e1404;
+  text-align: center;
+  padding: 15% 0% 5% 0%;
+  font-family: Brush Script MT;
+  font-size: 30px;
+}
+
+.col-md-6 p{
+  font-size: 15px;
+  text-align: center;
+  font-family: Florence, cursive;
+  padding: 0% 0% 0% 5%;
+  color: #3e1404;
+}
+
 .right-content{
-  position: relative;
-  width: 100%;
-  height: 600px;
+  background-color: #D3D3D3;
 }
-
-
-
-
-/* .bg-overlay {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  color: rgb(8, 8, 8);
-  height: 450px;
-  padding-top: 50px;
-} */
-
-
-/* .col-lg-4, .col-lg-8 {
-  padding: 0px;
-} */
-
-/* .text-block img{
-  width: 100%;
-  height: 600px;
-}
- */
-
- /* slider */
-.text-block {
-  margin: 0;
-  width: 100%;
-  height: 600px;
-  font-family: "Roboto", sans-serif;
-}
-
-.font-heading h2{
-    font-family: 'Proza Libre', sans-serif !important;
-    font-weight: 10;
-    text-align: left !important;
-    font-style: normal;
-    text-transform: uppercase;
-    letter-spacing: 7px; 
-    color: #f7dbbb;
-    /* border: solid rgba(251, 2, 7, 1.00); */
-    /* border-width: 0px 0px 4px 0px; */
-    /* margin: 0px 0px 30px 0px; */
-    padding: 20% 0 0 20.5%;
-  }
-
-.font-style-1{
-    color: #f7dbbb;
-    /* font-size: 100;
-    font-weight: 20;
-    text-align: left; */
-    padding: 0 20% 0 20%;
-    font-style: normal;
-    letter-spacing: 0px;
-    font-size: 40px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-
 /* .content {
   position: absolute;
   display: flex;

@@ -1,13 +1,14 @@
-.home{
-    background-color: #f7dbbb;
+.about{
+    background-color: #D3D3D3;
 }
 
 h1{
   padding-top: 30px;
   margin-left: 125px;
-  font-family: 'Dancing Script', cursive;
-  color: #593402;
-  font-size: 30px;
+  font-family: Brush Script MT;
+  letter-spacing: 5px;
+  font-size: 55px;
+  color: #3e1404;
   font-weight: 250;
 }
 
@@ -31,7 +32,7 @@ img {
     margin-bottom: 30px;
     font-size: 16px;
     line-height: 1.8;
-    color: #593402;
+    color: #3e1404;
 }
   
 .right-img-content {
