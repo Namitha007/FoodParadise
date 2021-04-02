@@ -9,7 +9,7 @@ import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MenuComponent } from './menu/menu.component';
 import { DessertsComponent } from './desserts/desserts.component';
 import { BeveragesComponent } from './beverages/beverages.component';
@@ -40,6 +40,7 @@ import { ReservationComponent } from './reservation/reservation.component';
     ReactiveFormsModule,
     HttpClientModule, 
     NgbModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

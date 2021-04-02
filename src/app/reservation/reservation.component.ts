@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./reservation.component.css']
 })
 export class ReservationComponent implements OnInit {
-
+  model:any = {}
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onSubmit() {
+    alert(JSON.stringify(this.model))
   }
 
 }
