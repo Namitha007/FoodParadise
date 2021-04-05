@@ -9,6 +9,7 @@ import { FastfoodComponent } from './fastfood/fastfood.component';
 import { HomeComponent } from './home/home.component';
 import { MenuComponent } from './menu/menu.component';
 import { ReservationComponent } from './reservation/reservation.component';
+import { ThankyouComponent } from './thankyou/thankyou.component';
 
 const routes: Routes = [
   {
@@ -37,6 +38,9 @@ const routes: Routes = [
   },
   {
     path: 'reservation', component: ReservationComponent 
+  },
+  {
+    path: 'thankyou', component: ThankyouComponent
   }
 ];
 
