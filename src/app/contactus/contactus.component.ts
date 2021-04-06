@@ -21,11 +21,11 @@ export class ContactusComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onSubmit(form: NgForm){
-    const value= form.value;
+  onSubmit(form: NgForm) {
+    const value = form.value;
     const data = {
       name: value.name,
-      msg: value.msg,  
+      msg: value.msg,
     };
 
     // let headers = new HttpHeaders({
@@ -36,21 +36,24 @@ export class ContactusComponent implements OnInit {
       .post(this._url.url + 'food/contact/', data)
       .subscribe(
         (responseData: any) => {
-          this.success= true;
+          this.success = true;
           form.reset();
           console.log(responseData);
+          
+          location.href = '/thankyou';
+
         },
         (error) => {
           console.log(error);
           this.success = false;
         }
       );
-    
+
   }
 
 
   ngOnDestroy() {
-    if(this.contactSubscriber){
+    if (this.contactSubscriber) {
       this.contactSubscriber.unsubscribe();
     }
   }

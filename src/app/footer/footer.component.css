@@ -30,38 +30,38 @@
 
 
 .footer .left-text-content #youtube{
-  color: #f7dbbb;
+  color: #ff0000;
   width: 45px;
   height: 45px;
   display: inline-block;
   text-align: center;
   line-height: 45px;
   font-size: 20px;
-  background-color: #ff0000; 
+  background-color: #f7dbbb; 
   border-radius: 50%;
 }
 
 .footer .left-text-content #twitter{
-  color: #f7dbbb;
+  color: #1da1f2;
   width: 45px;
   height: 45px;
   display: inline-block;
   text-align: center;
   line-height: 45px;
   font-size: 20px;
-  background-color: #1da1f2; 
+  background-color: #f7dbbb; 
   border-radius: 50%;
 }
 
 .footer .left-text-content #instagram{
-  color: #f7dbbb;
+  color: #dd2a7b;
   width: 45px;
   height: 45px;
   display: inline-block;
   text-align: center;
   line-height: 45px;
   font-size: 20px;
-  background-color: #dd2a7b; 
+  background-color: #f7dbbb; 
   border-radius: 50%;
 }
 

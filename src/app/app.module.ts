@@ -18,6 +18,9 @@ import { FastfoodComponent } from './fastfood/fastfood.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { ReservationComponent } from './reservation/reservation.component';
 import { ThankyouComponent } from './thankyou/thankyou.component';
+import { MenulistComponent } from './menulist/menulist.component';
+import { ReservationDialogComponent } from './reservation-dialog/reservation-dialog.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,9 @@ import { ThankyouComponent } from './thankyou/thankyou.component';
     FastfoodComponent,
     ContactusComponent,
     ReservationComponent,
-    ThankyouComponent
+    ThankyouComponent,
+    MenulistComponent,
+    ReservationDialogComponent
 ],
   imports: [
     BrowserModule,
@@ -42,9 +47,11 @@ import { ThankyouComponent } from './thankyou/thankyou.component';
     ReactiveFormsModule,
     HttpClientModule, 
     NgbModule,
-    FormsModule
+    FormsModule,
+    MatDialogModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [ReservationDialogComponent, MatDialogModule]
 })
 export class AppModule { }

@@ -1,6 +1,6 @@
 .text-block {
     width: 100%;
-    min-height: 620px;
+    min-height: 490px;
     padding: 5% 0;
 }
 
@@ -11,7 +11,7 @@ h6{
     text-transform: uppercase;
     letter-spacing: 7px; 
     color: #D3D3D3;
-    /* padding: 3% 0 0 0; */
+    padding: 0 0 3% 0;
 }
 
 .font-style{

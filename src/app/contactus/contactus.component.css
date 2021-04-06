@@ -1,7 +1,8 @@
 .contact{
     background-color: #d3d3d3;
     text-align: center;
-    min-height: 624px;
+    min-height: 490px;
+    /* min-height: 624px; */
     padding: 5% 0;
 }
 

@@ -60,8 +60,8 @@
                             <div class="col-4">
                                 <label for="mobileNumber">Number of Guests</label>
                             </div>
-                            <div class="col-8">
-                                <select class="form-control" id="exampleFormControlSelect1">
+                            <div class="col-8"> 
+                                <select class="form-control" id="exampleFormControlSelect1" name="guests" ngModel>
                                     <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
@@ -111,7 +111,8 @@
                         <div class="row btn-1">
                             <div class="col-12" style="text-align: center;">
                                     <button type="submit" class="btn btn-info" [disabled]="!f.valid">Make a
-                                        Reservation</button>
+                                        Reservation
+                                    </button>
                             </div>
                             <!-- <button class="btn-md btn-success successmsg" *ngIf="successMsg">
                                 Thank You For Reservation!!
