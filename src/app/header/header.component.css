@@ -7,6 +7,13 @@ a{
     color: #D3D3D3;
 }
 
+a:hover{
+    color: white;
+}
+a:active{
+    /* border-bottom: 2px solid white; */
+    color: white;
+}
 
 
 /* .header-img h1{

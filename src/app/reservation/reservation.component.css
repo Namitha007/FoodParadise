@@ -1,5 +1,7 @@
 .reservation{
     background-color: #d3d3d3;
+    min-height: 624px;
+    padding: 3% 0;
 }
 
 .col-12{

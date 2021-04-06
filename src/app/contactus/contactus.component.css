@@ -1,11 +1,17 @@
 .contact{
     background-color: #d3d3d3;
     text-align: center;
-    height: 490px;
+    min-height: 624px;
+    padding: 5% 0;
+}
+
+::placeholder{
+    font-size: 13px;
+    color: rgb(167, 166, 166);
 }
 
 h1{
-    padding-top: 50px;
+    /* padding-top: 50px; */
     font-family: Brush Script MT;
     letter-spacing: 5px;
     font-size: 50px;
@@ -14,7 +20,7 @@ h1{
 }
 
 p{
-    padding: 1% 0 4% 0;
+    /* padding: 1% 0 4% 0; */
     color: #3e1404;
     font-size: 11px;
     font-family: 'Proza Libre', sans-serif;
@@ -31,7 +37,7 @@ p{
 label{
     color: #3e1404;
     font-size: 20px;
-    padding: 0 0 1% 0;
+    /* padding: 0 0 1% 0; */
 }
 
 form{
@@ -45,6 +51,6 @@ button{
     color: #3e1404;
     border: 2px solid #3e1404;
     border-radius: 8px;
-    padding: 1% 2% 1% 2%;
-    margin-top: 20px;     
+    /* padding: 1% 2% 1% 2%; */
+    /* margin-top: 20px;      */
 }

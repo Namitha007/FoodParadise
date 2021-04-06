@@ -108,3 +108,8 @@ h1{
   top: 0;
   z-index: 10;
 } */
+
+
+.spacer{
+  min-height: 150px;
+}
