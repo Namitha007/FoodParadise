@@ -8,12 +8,15 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
   styleUrls: ['./reservation-dialog.component.css']
 })
 export class ReservationDialogComponent implements OnInit {
+  value: any = {};
 
   constructor(
     public dialogRef: MatDialogRef<ReservationDialogComponent>,
     @Inject(MAT_DIALOG_DATA) public data: DialogData) { }
 
   ngOnInit(): void {
+    console.log(this.data['responseData']);
+    this.value = this.data['responseData'];
   }
 
   close(): void {

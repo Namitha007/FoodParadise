@@ -1,8 +1,18 @@
-.text-block {
+/* .text-block {
     width: 100%;
     height: 490px;
-    /* padding: 5% 0; */
+    padding: 5% 0;
+} */
+.cdk-overlay-backdrop.cdk-overlay-dark-backdrop.cdk-overlay-backdrop-showing {
+    background: #1a1c1da1;
 }
+
+mat-dialog-container#mat-dialog-0 {
+    padding: 0 !important;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../../assets/images/reserve.jpg'); 
+    background-size: cover;
+}
+
 
 h1{
     font-family: Brush Script MT;
@@ -12,7 +22,7 @@ h1{
     text-transform: uppercase;
     letter-spacing: 7px; 
     color: #D3D3D3;
-    padding: 3% 0 0 0;
+    padding: 4% 0 3% 0;
 }
 
 h4{
@@ -23,14 +33,22 @@ h4{
     text-transform: uppercase;
     letter-spacing: 7px; 
     color: #D3D3D3;
-    /* padding: 3% 0 0 0; */
+    padding: 2% 0 2% 0;
 }
 
 .font-style{
     color: #D3D3D3;
     text-align: center;
-    padding: 0 0 2% 0;
+    padding: 0 0 0 0;
     letter-spacing: 5px;
     font-family: 'Proza Libre', sans-serif;
 }
 
+.row{
+    text-align: center;
+    color: #D3D3D3;
+}
+
+label{
+    margin: 0%;
+}

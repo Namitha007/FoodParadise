@@ -1,5 +1,5 @@
 .contact{
-    background-color: #d3d3d3;
+    background-color: white;
     text-align: center;
     min-height: 490px;
     /* min-height: 624px; */
@@ -54,4 +54,9 @@ button{
     border-radius: 8px;
     /* padding: 1% 2% 1% 2%; */
     /* margin-top: 20px;      */
+}
+
+h2{
+    color: #3e1404;
+    
 }

@@ -1,7 +1,7 @@
 .reservation{
-    background-color: #d3d3d3;
-    min-height: 624px;
-    padding: 3% 0;
+    background-color: white;
+    min-height: 566px;
+    padding: 15px 0;
 }
 
 .col-12{
@@ -44,3 +44,4 @@ button[disabled]{
   background-color: #3e1404;
   color: #d3d3d3;
 }
+

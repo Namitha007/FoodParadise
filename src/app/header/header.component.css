@@ -15,6 +15,12 @@ a:active{
     color: white;
 }
 
+.btn{
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px -7px #fff
+
+
+}
 
 /* .header-img h1{
     font-family: 'Dancing Script', cursive;

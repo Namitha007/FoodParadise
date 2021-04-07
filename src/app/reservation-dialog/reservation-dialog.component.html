@@ -1,9 +1,129 @@
-
-<div class="text-block"
-    style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../../assets/images/reserve.jpg'); background-size: cover;">
+<!-- <h1 mat-dialog-title>Delete Confirmation</h1> -->
+<div class="text-block p-0"
+style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../../assets/images/reserve.jpg'); background-size: cover;">
+<i class="material-icons" (click)="close()" style="cursor: pointer;float:right; color: white;" >
+    close
+  </i>
     <div class="font-heading">
         <h1>YOUR TABLE RESERVED</h1>
-        <h4>Thank You!</h4>
+
+
+        <div class="row">
+            <div class="col-12">
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-3"></div>
+                        <div class="col-3 ml-5 pl-5" style="text-align: left;">
+                            <label>Reservation ID</label>
+                        </div>
+                        <!-- <div class="col-1"></div> -->
+                        <div class="col-4 mr-5 pr-5" style="text-align: left;">
+                            FP_{{ value.id }}
+                        </div>
+                        <div class="col-2"></div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-3"></div>
+                        <div class="col-3 ml-5 pl-5" style="text-align: left;">
+                            <label>Name</label>
+                        </div>
+                        <!-- <div class="col-1"></div> -->
+                        <div class="col-4 mr-5 pr-5" style="text-align: left;">
+                            {{ value.name }}
+                        </div>
+                        <div class="col-2"></div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-3"></div>
+                        <div class="col-3 ml-5 pl-5" style="text-align: left;">
+                            <label>Mobile Number</label>
+                        </div>
+                        <!-- <div class="col-1"></div> -->
+                        <div class="col-4 mr-5 pr-5" style="text-align: left;">
+                            {{ value.mbl }}
+                        </div>
+                        <div class="col-2"></div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-3"></div>
+                        <div class="col-3 ml-5 pl-5" style="text-align: left;">
+                            <label>Email</label>
+                        </div>
+                        <!-- <div class="col-1"></div> -->
+                        <div class="col-4 mr-5 pr-5" style="text-align: left;">
+                            {{ value.email }}
+                        </div>
+                        <div class="col-2"></div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-3"></div>
+                        <div class="col-3 ml-5 pl-5" style="text-align: left;">
+                            <label>Number of Guests</label>
+                        </div>
+                        <!-- <div class="col-1"></div> -->
+                        <div class="col-4 mr-5 pr-5" style="text-align: left;">
+                            {{ value.guests }}
+                        </div>
+                        <div class="col-2"></div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-3"></div>
+                        <div class="col-3 ml-5 pl-5" style="text-align: left;">
+                            <label>Date</label>
+                        </div>
+                        <!-- <div class="col-1"></div> -->
+                        <div class="col-4 mr-5 pr-5" style="text-align: left;">
+                            {{ value.date }}
+                        </div>
+                        <div class="col-2"></div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-3"></div>
+                        <div class="col-3 ml-5 pl-5" style="text-align: left;">
+                            <label>Time</label>
+                        </div>
+                        <!-- <div class="col-1"></div> -->
+                        <div class="col-4 mr-5 pr-5" style="text-align: left;">
+                            {{ value.time }}
+                        </div>
+                        <div class="col-2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <p class="font-style">waiting msg</p>
+    <h4>Thank You!</h4>
 </div>
+
+
+
+
+
+
+    <!-- <p>Reservation ID : <span> FP_{{ value.id }}</span></p>
+        <p>Name : <span> {{ value.name }}</span></p>
+        <p>Mobile Number : <span> {{ value.mbl }}</span></p>
+        <p>Email : <span> {{ value.email }}</span></p>
+        <p>Number of Guests : <span> {{ value.guests }}</span></p>
+        <p>Date : <span> {{ value.date }}</span></p>
+        <p>Time : <span> {{ value.time }}</span></p> -->
+
+    

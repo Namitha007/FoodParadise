@@ -1,7 +1,7 @@
 .text-block {
     width: 100%;
     min-height: 490px;
-    padding: 5% 0;
+    padding: 6% 0;
 }
 
 h6{
@@ -11,13 +11,13 @@ h6{
     text-transform: uppercase;
     letter-spacing: 7px; 
     color: #D3D3D3;
-    padding: 0 0 3% 0;
+    /* padding: 0 0 1% 0; */
 }
 
 .font-style{
     color: #D3D3D3;
     text-align: center;
-    padding: 0 0 2% 0;
+    /* padding: 0 0 4% 0; */
     letter-spacing: 5px;
     font-size: 55px;
     font-family: Brush Script MT;
