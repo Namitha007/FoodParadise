@@ -20,6 +20,7 @@ export class ReservationComponent implements OnInit {
   model: any = {}
   successMsg: boolean = false;
   formattedStartDate: string;
+  errmsg: boolean;
   constructor(private _url: DburlServiceService,
     private http: HttpClient,
     private router: Router,
@@ -56,17 +57,45 @@ export class ReservationComponent implements OnInit {
 
   onSubmit(form: NgForm) {
     const value = form.value;
-    // alert(JSON.stringify(this.model))
-    // console.log(JSON.stringify(this.model))
-    // console.log(value)
-    // console.log(value.Date)
-    // console.log(this.formattedStartDate)
-    // console.log(new Date())
-    if (value.Date >= this.formattedStartDate) {
-      console.log(true)
-    } else {
-      console.log(false)
-    }
+    // if (value.Date < this.formattedStartDate) {
+      // this.errmsg = false;
+      const data = {
+        name: value.Name,
+        mbl: value.mobileNumber,
+        email: value.email,
+        guests: value.guests,
+        date: value.Date,
+        time: value.Time,
+      };
+  
+  
+      this.reservationSubscriber = this.http
+        .post(this._url.url + 'food/reservation/', data)
+        .subscribe(
+          (responseData: any) => {
+            this.success = true;
+            form.reset();
+            console.log(responseData);
+  
+              const dialogRef = this.dialog.open(ReservationDialogComponent, {
+                width: '800px',
+          
+                data: {responseData: responseData}
+              });
+          },
+          (error) => {
+            console.log(error);
+            this.success = false;
+          }
+        );
+  
+    // } else {
+    //   this.errmsg = true;
+    // }
+
+
+
+    
     // form.reset();
     // this.successMsg = true;
 
@@ -74,35 +103,27 @@ export class ReservationComponent implements OnInit {
 
 
     // const value= form.value;
-    const data = {
-      name: value.Name,
-      mbl: value.mobileNumber,
-      email: value.email,
-      guests: value.guests,
-      date: value.Date,
-      time: value.Time,
-    };
+      }
 
-
-    this.reservationSubscriber = this.http
-      .post(this._url.url + 'food/reservation/', data)
-      .subscribe(
-        (responseData: any) => {
-          this.success = true;
-          form.reset();
-          console.log(responseData);
-
-            const dialogRef = this.dialog.open(ReservationDialogComponent, {
-              width: '800px',
-        
-              data: {responseData: responseData}
-            });
-        },
-        (error) => {
-          console.log(error);
-          this.success = false;
-        }
-      );
+  onChange(date){
+    // console.log(date)
+    console.log(new Date())
+    var startDate = new Date();
+    // var startDate = new Date();
+    this.formattedStartDate =
+      //  startDate.getUTCFullYear() +
+      //         '-0' + (startDate.getUTCMonth() + 1) +
+      //         '-0' + (startDate.getUTCDate());
+      ' ' + (startDate.getUTCHours()) +
+      ':' + (startDate.getUTCMinutes()) +
+      ':' + (startDate.getUTCSeconds());
+    console.log(startDate)
+    console.log(date)
+    if (date > this.formattedStartDate) {
+      console.log(true)
+    } else {
+      console.log(false)
+    }
   }
 
   ngOnDestroy() {

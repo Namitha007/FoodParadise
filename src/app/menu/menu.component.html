@@ -4,11 +4,11 @@
         <h6>Food Paradise</h6>
     </div>
     <p class="font-style">MENU</p>
-    <div class="row col-md-12 my-5 pt-5">
+    <div class="row col-md-12 my-5 pt-4">
 
 
         <div class="card mr-5 " style="max-width: 500px; background-color: #d3d3d3;">
-            <a [routerLink]="['/menuList/', 'DI']">
+            <a [routerLink]="['/menuList/', 'DE']">
                 <div class="row">
                     <div class="col-md-4">
                         <img src="../../assets/images/chocolate-pastry.jpg" alt="...">
@@ -26,7 +26,7 @@
 
 
         <div class="card ml-4" style="max-width: 500px; background-color: #d3d3d3;">
-            <a href="beverages">
+            <a [routerLink]="['/menuList/', 'BE']">
                 <div class="row">
                     <div class="col-md-4">
                         <img src="../../assets/images/coffee.jpg" alt="...">
@@ -44,7 +44,7 @@
     </div>
     <div class="row col-md-12">
         <div class="card mr-5" style="max-width: 500px; background-color: #d3d3d3;">
-            <a href="fastfood">
+            <a [routerLink]="['/menuList/', 'FA']">
                 <div class="row">
                     <div class="col-md-4">
                         <img src="../../assets/images/pizza01.jpg" alt="...">
@@ -60,7 +60,7 @@
         </div>
 
         <div class="card ml-4" style="max-width: 500px; background-color: #d3d3d3;">
-            <a href="dinner">
+            <a [routerLink]="['/menuList/', 'DI']">
                 <div class="row">
                     <div class="col-md-4">
                         <img src="../../assets/images/steak01.jpg" alt="...">

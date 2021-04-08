@@ -1,19 +1,22 @@
 <div class="reservation">
     <div class="container">
         <div class="row">
-            <div class="col-12 border border-light" style="background-color: #d3d3d3; box-shadow: 0px 0px 30px -5px #000; ">
+            <div class="col-1"></div>
+            <div class="col-10 border border-light" style="background-color: #d3d3d3; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2); ">
                 <h2>Table Reservation</h2>
-                <p>please reserve at least 24 hours in advance for reservation of table.</p>
+                <p>please reserve at least 24 hours in advance for reservation of table.<br><span style="color: red; font-size: 15px; text-align: center;" *ngIf="errmsg">Reserve Before 24 hours.</span></p>
                 <form name="form" (ngSubmit)="f.form.valid && onSubmit(f)" #f="ngForm">
 
                     <div class="form-group">
-                        <div class="row">
-                            <div class="col-4">
+                        <div class="row mb-2">
+                            <div class="col-1"></div>
+                            <div class="col-3">
                                 <label for="Name">Name</label>
                             </div>
-                            <div class="col-8">
+                            <div class="col-7">
                                 <input type="text" class="form-control" [(ngModel)]="model.Name" #Name="ngModel"
                                     [ngClass]="{'is-invalid':Name.touched && Name.invalid}" name="Name" required />
+                                    <div class="col-1"></div>
                                 <div class="invalid-feedback">
                                     <div>Name is required</div>
                                 </div>
@@ -22,15 +25,17 @@
                     </div>
 
                     <div class="form-group">
-                        <div class="row">
-                            <div class="col-4">
+                        <div class="row mb-2">
+                            <div class="col-1"></div>
+                            <div class="col-3">
                                 <label for="mobileNumber">Mobile Number</label>
                             </div>
-                            <div class="col-8">
-                                <input type="number" min="1111111111" max="9999999999" class="form-control"
+                            <div class="col-7">
+                                <input type="number" class="form-control" 
                                     [(ngModel)]="model.mobileNumber" #mobileNumber="ngModel"
                                     [ngClass]="{'is-invalid':mobileNumber.touched && mobileNumber.invalid}"
                                     name="mobileNumber" required />
+                                    <div class="col-1"></div>
                                 <div class="invalid-feedback">
                                     <div>Mobile number is required</div>
                                 </div>
@@ -39,14 +44,16 @@
                     </div>
 
                     <div class="form-group">
-                        <div class="row">
-                            <div class="col-4">
+                        <div class="row mb-2">
+                            <div class="col-1"></div>
+                            <div class="col-3">
                                 <label for="email">Email</label>
                             </div>
-                            <div class="col-8">
+                            <div class="col-7">
                                 <input type="email" class="form-control" [(ngModel)]="model.email" #email="ngModel"
                                     [ngClass]="{'is-invalid':email.touched && email.invalid}" name="email" required
                                     email />
+                                    <div class="col-1"></div>
                                 <div *ngIf="f.touched && email.invalid" class="invalid-feedback">
                                     <div *ngIf="email.errors.required">Email is required</div>
                                     <div *ngIf="email.errors.email">Email must be a valid email Address</div>
@@ -56,11 +63,12 @@
                     </div>
 
                     <div class="form-group">
-                        <div class="row">
-                            <div class="col-4">
-                                <label for="mobileNumber">Number of Guests</label>
+                        <div class="row mb-2">
+                            <div class="col-1"></div>
+                            <div class="col-3">
+                                <label>Number of Tables <br> <span>(number of seats = 4 / table)</span></label>
                             </div>
-                            <div class="col-8"> 
+                            <div class="col-7"> 
                                 <select class="form-control" id="exampleFormControlSelect1" name="guests" ngModel>
                                     <option>1</option>
                                     <option>2</option>
@@ -74,17 +82,20 @@
                                     <option>10</option>
                                 </select>
                             </div>
+                            <div class="col-1"></div>
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <div class="row">
-                            <div class="col-4">
+                        <div class="row mb-2">
+                            <div class="col-1"></div>
+                            <div class="col-3">
                                 <label for="Date">Date</label>
                             </div>
-                            <div class="col-8">
-                                <input type="date" class="form-control" [(ngModel)]="model.Date" #Date="ngModel"
+                            <div class="col-7">
+                                <input type="date" (change)="onChange($event.target.value)" class="form-control" [(ngModel)]="model.Date" #Date="ngModel"
                                     [ngClass]="{'is-invalid':Date.touched && Date.invalid}" name="Date" required />
+                                    <div class="col-1"></div>
                                 <div class="invalid-feedback">
                                     <div>Date is required</div>
                                 </div>
@@ -92,14 +103,17 @@
                         </div>
                     </div>
 
+
                     <div class="form-group">
-                        <div class="row">
-                            <div class="col-4">
+                        <div class="row mb-2">
+                            <div class="col-1"></div>
+                            <div class="col-3">
                                 <label for="Time">Time</label>
                             </div>
-                            <div class="col-8">
+                            <div class="col-7">
                                 <input type="time" class="form-control" [(ngModel)]="model.Time" #Time="ngModel"
                                     [ngClass]="{'is-invalid':Time.touched && Time.invalid}" name="Time" required />
+                                    <div class="col-1"></div>
                                 <div class="invalid-feedback">
                                     <div>Time is required</div>
                                 </div>
@@ -107,6 +121,7 @@
                         </div>
                     </div>
 
+                    
                     <div class="form-group">
                         <div class="row btn-1">
                             <div class="col-12" style="text-align: center;">
@@ -114,9 +129,11 @@
                                         Reservation
                                     </button>
                             </div>
-                            <button type="button" (click)="onSubmit(f)" class="btn btn-info">Make a
+
+
+                            <!-- <button type="button" (click)="onSubmit(f)" class="btn btn-info">Make a
                                 Reservation
-                            </button>
+                            </button> -->
                             <!-- <button class="btn-md btn-success successmsg" *ngIf="successMsg">
                                 Thank You For Reservation!!
                             </button> -->

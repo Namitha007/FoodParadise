@@ -1,6 +1,6 @@
 .about{
     background-color: #D3D3D3;
-    min-height: 500px;
+    min-height: 580px;
     padding: 1% 0;
 }
 
@@ -47,6 +47,6 @@ img {
 }
 
 .right-img-content img{
-    height: 370px;
-    width: 400px;
+    height: 455px;
+    width: 100%;
 }

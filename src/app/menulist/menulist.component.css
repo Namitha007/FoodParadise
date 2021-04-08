@@ -1,0 +1,155 @@
+/* .row{
+    background-color: #d3d3d3;
+}
+
+img{
+    width: 100%;
+    height: 230px;
+}
+
+.card-body{
+    color: #3e1404;
+}
+ */
+.continer{
+    background-color: #d3d3d3;
+}
+
+ .card {
+    color: white;
+    border: none;
+    background-color: #e76c6d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .card-img-top {
+    width: 100%;
+    height: 200px;
+  }
+  .card-title {
+    margin: 0px;
+  }
+  .card-text {
+    text-align: center;
+    color: #3e1014;
+  }
+  /* a {
+    color: #d3d3d3;
+  } */
+  /* .yel {
+    background-color: #e76c6d;
+    opacity: 0.88;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    border: none;
+    box-shadow: inset 0px 0px 85px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: inset 0px 0px 85px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: inset 0px 0px 85px rgba(0, 0, 0, 0.5);
+  }
+  .yew {
+    background-color: #e76c6d;
+    opacity: 0.88;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    border: none;
+    -moz-box-shadow: inset 0 0 20px #888585;
+    -webkit-box-shadow: inset 0 0 20px #888585;
+    box-shadow: inset 0 0 20px #888585;
+  }
+  .yev {
+    background-color: #e76c6d;
+    opacity: 0.88;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+   */
+  /* .jumbotron {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../../assets/images/Apple-Pie.jpg");
+    background-size: contain;
+    margin-top: 70px;
+    border-radius: 0%;
+  } */
+  /* .jumbotron h1 {
+    text-align: center;
+  } */
+  /* .percent-font {
+    font-size: 130%;
+    font-weight: 400;
+  } */
+  
+  /* .jumbotron h1 {
+    padding: 50px;
+    color: white;
+    font-size: 3rem;
+    line-height: 100%;
+    font-weight: 400 !important;
+    font-family: Arial, Helvetica, sans-serif;
+  } */
+  /* flip card */
+  h2{
+    font-weight: 500;
+  }
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 360px;
+    perspective: 1000px;
+    border: none;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: white;
+    color: #3e1014;
+  }
+  
+  .flip-card-back {
+    background-color: white;
+    color: #3e1014;
+    transform: rotateY(180deg);
+  }
+  
+  /* .cardBackSideData {
+      display: block;
+      background-color: rgb(214, 161, 152);
+      height: 200px;
+      font-weight: 400;
+      width:100%;
+  } */
+  .fllip {
+    border-radius: 5px;
+  }
+  /* .card-text1 {
+    padding-bottom: 25px;
+    text-align: right;
+    color: white;
+  } */
+  

@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { DburlServiceService } from '../dburl-service.service';
 
+
 @Component({
   selector: 'app-menulist',
   templateUrl: './menulist.component.html',

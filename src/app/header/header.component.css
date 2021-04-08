@@ -17,10 +17,12 @@ a:active{
 
 .btn{
     border-radius: 5px;
-    box-shadow: 5px 5px 15px -7px #fff
-
-
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+    font-weight: 500;
 }
+
+
+
 
 /* .header-img h1{
     font-family: 'Dancing Script', cursive;

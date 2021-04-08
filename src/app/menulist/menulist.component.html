@@ -5,11 +5,61 @@
         <p class="card-text">Strawberry Milkshake creamy, rich and delicious milkshake made with fresh strawberries.</p>
     </div>
 </div> -->
-
-<div class="card m-4" style="width: 18rem;" *ngFor="let menu of filteredMenu">
-    <img class="card-img-top" src="../../assets/images/{{menu.image}}" alt="Card image">
-    <div class="card-body">
-      <h5 class="card-title">{{menu.title}}</h5>
-      <p class="card-text">{{menu.description}}</p>
+<!-- <div class="row row-cols-md-4">
+  <div class="col">
+    <div class="card m-4" style="width: 18rem;" *ngFor="let menu of filteredMenu">
+      <img class="card-img-top" src="../../assets/images/{{menu.image}}" alt="Card image">
+      <div class="card-body">
+        <h2 class="card-title">{{menu.title}}</h2>
+        <p class="card-text">{{menu.description}}</p>
+      </div>
     </div>
   </div>
+</div> -->
+
+
+  
+  <!-- <div class="jumbotron">
+    <h1>MENU</h1>      
+  </div> -->
+  
+<div class="continer py-5">
+  <!-- <div class="row">
+    <div class="col">
+    </div>
+  </div> -->
+<div class="container py-5">
+  <div class="row">
+    <div class="flip-card col-md-3 mx-auto my-5" *ngFor="let menu of filteredMenu">
+      <div class="flip-card-inner">
+        <div class="flip-card-front fllip">
+          <img class="card-img-top" src="../../assets/images/{{menu.image}}" alt="Card image">
+          <div class="card-body">
+          <h2 class="card-title">{{menu.title}}</h2>
+            <!-- <h4 *ngIf="hover" class="card-title">{{card.courseId}}</h4> -->
+            <p class="card-text">{{menu.description}}</p>
+          </div>
+        </div>
+
+
+          <div class="flip-card-back fllip">
+          
+            <img class="card-img-top" src="../../assets/images/{{menu.image}}" alt="Card image">
+            <div class="card-body">
+            <h2 class="card-title">{{menu.title}}</h2>
+              <p class="card-text">{{menu.description}}</p>
+            </div>
+        </div>
+      
+    </div>
+  </div>
+  
+</div>
+<!-- <div class="row">
+  <div class="col-md-12" style="height: 5rem;"></div>
+</div> -->
+
+</div>
+
+</div>
+
