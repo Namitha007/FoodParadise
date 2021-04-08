@@ -8,6 +8,7 @@ import { DinnerComponent } from './dinner/dinner.component';
 import { FastfoodComponent } from './fastfood/fastfood.component';
 import { HomeComponent } from './home/home.component';
 import { MenuComponent } from './menu/menu.component';
+import { MenulistComponent } from './menulist/menulist.component';
 import { ReservationDialogComponent } from './reservation-dialog/reservation-dialog.component';
 import { ReservationComponent } from './reservation/reservation.component';
 import { ThankyouComponent } from './thankyou/thankyou.component';
@@ -45,6 +46,9 @@ const routes: Routes = [
   },
   {
     path: 'reservation-dialog', component: ReservationDialogComponent
+  },
+  {
+    path: 'menuList/:category', component: MenulistComponent
   }
 ];
 
