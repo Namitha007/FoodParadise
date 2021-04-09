@@ -4,7 +4,11 @@
             <div class="col-1"></div>
             <div class="col-10 border border-light" style="background-color: #d3d3d3; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2); ">
                 <h2>Table Reservation</h2>
-                <p>please reserve at least 24 hours in advance for reservation of table.<br><span style="color: red; font-size: 15px; text-align: center;" *ngIf="errmsg">Reserve Before 24 hours.</span></p>
+                <p>please reserve at least 24 hours in advance for reservation of table.<br>
+                <span *ngIf="errmsg" style="color: red; font-size: 15px; text-align: center;">
+                    Reserve Before 24 hours.
+                </span>
+                </p>
                 <form name="form" (ngSubmit)="f.form.valid && onSubmit(f)" #f="ngForm">
 
                     <div class="form-group">

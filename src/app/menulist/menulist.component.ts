@@ -15,6 +15,7 @@ export class MenulistComponent implements OnInit {
   filteredMenu: any;
   initialSubscriber: any;
   category: any;
+  menuTitle: any;
 
   constructor(private _url: DburlServiceService,
     private http: HttpClient,
@@ -25,6 +26,15 @@ export class MenulistComponent implements OnInit {
       this.category = data.category;
       // console.log(data);
     });
+    if(this.category=='DE'){
+      this.menuTitle="Dessert"
+    } else if(this.category=='BE'){
+      this.menuTitle="Bevarage"
+    }  else if(this.category=='FA'){
+      this.menuTitle="Fastfood"
+    }  else if(this.category=='DI'){
+      this.menuTitle="Dinner"
+    }
     this.getMenuList();
   }
 

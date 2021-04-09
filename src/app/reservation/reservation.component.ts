@@ -32,12 +32,12 @@ export class ReservationComponent implements OnInit {
     var startDate = new Date();
     // var startDate = new Date();
     this.formattedStartDate =
-      //  startDate.getUTCFullYear() +
-      //         '-0' + (startDate.getUTCMonth() + 1) +
-      //         '-0' + (startDate.getUTCDate());
-      ' ' + (startDate.getUTCHours()) +
-      ':' + (startDate.getUTCMinutes()) +
-      ':' + (startDate.getUTCSeconds());
+       startDate.getUTCFullYear() +
+              '-0' + (startDate.getUTCMonth() + 1) +
+              '-0' + (startDate.getUTCDate());
+      // ' ' + (startDate.getUTCHours()) +
+      // ':' + (startDate.getUTCMinutes()) +
+      // ':' + (startDate.getUTCSeconds());
     console.log(startDate)
     // console.log(this.formattedStartDate)
 
@@ -49,16 +49,12 @@ export class ReservationComponent implements OnInit {
 
   }
 
-  startDate(startDate: any) {
-    throw new Error('Method not implemented.');
-  }
-
 
 
   onSubmit(form: NgForm) {
     const value = form.value;
-    // if (value.Date < this.formattedStartDate) {
-      // this.errmsg = false;
+    if (value.Date < this.formattedStartDate) {
+      this.errmsg = false;
       const data = {
         name: value.Name,
         mbl: value.mobileNumber,
@@ -89,9 +85,9 @@ export class ReservationComponent implements OnInit {
           }
         );
   
-    // } else {
-    //   this.errmsg = true;
-    // }
+    } else {
+      this.errmsg = true;
+    }
 
 
 
@@ -107,18 +103,18 @@ export class ReservationComponent implements OnInit {
 
   onChange(date){
     // console.log(date)
-    console.log(new Date())
     var startDate = new Date();
     // var startDate = new Date();
     this.formattedStartDate =
-      //  startDate.getUTCFullYear() +
-      //         '-0' + (startDate.getUTCMonth() + 1) +
-      //         '-0' + (startDate.getUTCDate());
-      ' ' + (startDate.getUTCHours()) +
-      ':' + (startDate.getUTCMinutes()) +
-      ':' + (startDate.getUTCSeconds());
+       startDate.getUTCFullYear() +
+              '-0' + (startDate.getUTCMonth() + 1) +
+              '-0' + (startDate.getUTCDate());
+      // ' ' + (startDate.getUTCHours()) +
+      // ':' + (startDate.getUTCMinutes()) +
+      // ':' + (startDate.getUTCSeconds());
     console.log(startDate)
     console.log(date)
+    console.log(this.formattedStartDate)
     if (date > this.formattedStartDate) {
       console.log(true)
     } else {
