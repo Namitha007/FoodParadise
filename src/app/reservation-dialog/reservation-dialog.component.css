@@ -22,7 +22,11 @@ h1{
     text-transform: uppercase;
     letter-spacing: 7px; 
     color: #D3D3D3;
-    padding: 4% 0 3% 0;
+    padding: 8% 0 6% 0;
+}
+
+.col-12 {
+    padding: 0 1% 0 6%;
 }
 
 h4{
@@ -33,7 +37,7 @@ h4{
     text-transform: uppercase;
     letter-spacing: 7px; 
     color: #D3D3D3;
-    padding: 4% 0 4% 0;
+    padding: 6% 0 0 0;
 }
 
 .font-style{

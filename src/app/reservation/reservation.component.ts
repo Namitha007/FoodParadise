@@ -78,7 +78,7 @@ export class ReservationComponent implements OnInit {
             console.log(responseData);
   
               const dialogRef = this.dialog.open(ReservationDialogComponent, {
-                width: '800px',
+                // width: '800px',
           
                 data: {responseData: responseData}
               });

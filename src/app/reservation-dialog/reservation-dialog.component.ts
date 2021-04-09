@@ -1,6 +1,7 @@
 import { Inject } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-reservation-dialog',
@@ -12,7 +13,8 @@ export class ReservationDialogComponent implements OnInit {
 
   constructor(
     public dialogRef: MatDialogRef<ReservationDialogComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: DialogData) { }
+    @Inject(MAT_DIALOG_DATA) public data: DialogData,
+    private router: Router) { }
 
   ngOnInit(): void {
     console.log(this.data['responseData']);
@@ -21,6 +23,7 @@ export class ReservationDialogComponent implements OnInit {
 
   close(): void {
     this.dialogRef.close();
+    this.router.navigate(['/'])
   }
 
   onDelete() {
