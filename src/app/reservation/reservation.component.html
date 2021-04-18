@@ -38,7 +38,7 @@
                                 <input type="number" class="form-control" 
                                     [(ngModel)]="model.mobileNumber" #mobileNumber="ngModel"
                                     [ngClass]="{'is-invalid':mobileNumber.touched && mobileNumber.invalid}"
-                                    name="mobileNumber" required />
+                                    name="mobileNumber" placeholder="498-348-3872" pattern="(\d{3})-?\s?(\d{3})-?\s?(\d{4})" required />
                                     <div class="col-1"></div>
                                 <div class="invalid-feedback">
                                     <div>Mobile number is required</div>
@@ -74,7 +74,7 @@
                             </div>
                             <div class="col-7"> 
                                 <select class="form-control" id="exampleFormControlSelect1" name="guests" ngModel>
-                                    <option>1</option>
+                                    <option value="" selected>1</option>
                                     <option>2</option>
                                     <option>3</option>
                                     <option>4</option>
