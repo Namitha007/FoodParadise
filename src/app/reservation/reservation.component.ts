@@ -20,7 +20,7 @@ export class ReservationComponent implements OnInit {
   model: any = {}
   successMsg: boolean = false;
   formattedStartDate: string;
-  errmsg: boolean;
+  errmsg: boolean = false;
   constructor(private _url: DburlServiceService,
     private http: HttpClient,
     private router: Router,
@@ -34,7 +34,7 @@ export class ReservationComponent implements OnInit {
     this.formattedStartDate =
        startDate.getUTCFullYear() +
               '-0' + (startDate.getUTCMonth() + 1) +
-              '-0' + (startDate.getUTCDate());
+              '-' + (startDate.getUTCDate());
       // ' ' + (startDate.getUTCHours()) +
       // ':' + (startDate.getUTCMinutes()) +
       // ':' + (startDate.getUTCSeconds());
@@ -53,7 +53,8 @@ export class ReservationComponent implements OnInit {
 
   onSubmit(form: NgForm) {
     const value = form.value;
-    if (value.Date < this.formattedStartDate) {
+    console.log(value.Date);
+    console.log(this.formattedStartDate);
       this.errmsg = false;
       const data = {
         name: value.Name,
@@ -85,13 +86,6 @@ export class ReservationComponent implements OnInit {
           }
         );
   
-    } else {
-      this.errmsg = true;
-    }
-
-
-
-    
     // form.reset();
     // this.successMsg = true;
 
@@ -108,7 +102,7 @@ export class ReservationComponent implements OnInit {
     this.formattedStartDate =
        startDate.getUTCFullYear() +
               '-0' + (startDate.getUTCMonth() + 1) +
-              '-0' + (startDate.getUTCDate());
+              '-' + (startDate.getUTCDate());
       // ' ' + (startDate.getUTCHours()) +
       // ':' + (startDate.getUTCMinutes()) +
       // ':' + (startDate.getUTCSeconds());
@@ -116,8 +110,10 @@ export class ReservationComponent implements OnInit {
     console.log(date)
     console.log(this.formattedStartDate)
     if (date > this.formattedStartDate) {
+      this.errmsg = false;
       console.log(true)
     } else {
+      this.errmsg = true;
       console.log(false)
     }
   }

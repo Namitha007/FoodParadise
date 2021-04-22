@@ -38,7 +38,7 @@
                                 <input type="number" class="form-control" 
                                     [(ngModel)]="model.mobileNumber" #mobileNumber="ngModel"
                                     [ngClass]="{'is-invalid':mobileNumber.touched && mobileNumber.invalid}"
-                                    name="mobileNumber" placeholder="498-348-3872" pattern="(\d{3})-?\s?(\d{3})-?\s?(\d{4})" required />
+                                    name="mobileNumber" placeholder="000-000-0000" pattern="(\d{3})-?\s?(\d{3})-?\s?(\d{4})" required />
                                     <div class="col-1"></div>
                                 <div class="invalid-feedback">
                                     <div>Mobile number is required</div>
@@ -129,15 +129,15 @@
                     <div class="form-group">
                         <div class="row btn-1">
                             <div class="col-12" style="text-align: center;">
-                                    <button type="submit" class="btn btn-info" [disabled]="!f.valid">Make a
+                                    <button type="submit" class="btn btn-info" [disabled]="!f.valid && errmsg">Make a
                                         Reservation
                                     </button>
                             </div>
 
 
-                            <button type="button" (click)="onSubmit(f)" class="btn btn-info">Make a
+                            <!-- <button type="button" (click)="onSubmit(f)" class="btn btn-info">Make a
                                 Reservation
-                            </button>
+                            </button> -->
                             <!-- <button class="btn-md btn-success successmsg" *ngIf="successMsg">
                                 Thank You For Reservation!!
                             </button> -->
